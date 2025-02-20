@@ -8,9 +8,10 @@ def add_food(grocery_list: list, food: str):
 
 # Define a function to remove an item from the list
 def remove_food(grocery_list: list, food: str):
-    remove_food.remove(food)
-if not remove_food:
-    print("Please remove something that is in your list.")
+    if food in grocery_list:
+        grocery_list.remove(food)
+    else:
+        print("Please enter a food that is in your list.")
 
 # If not, display a message saying the item is not in the list
 
