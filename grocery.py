@@ -18,7 +18,7 @@ def remove_food(grocery_list: list, food: str):
 def display_list(grocery_list: list):
     if grocery_list:
         print("\nHere is your current grocery list.")
-        for index, item in enumerate(grocery_list, start=1): # Study this didn't understand had to check key
+        for index, food in enumerate(grocery_list, start=1): # Study this didn't understand had to check key
             print(f"{index}, {food}")
     else:
         print("Your grocery list is empty.") # If the list is empty, display a message
