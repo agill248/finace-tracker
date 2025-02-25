@@ -7,7 +7,7 @@ def update_score(scores: list, fresh_score: int):
     scores.append(fresh_score) # append is used to add things to the end of the list
 
 # Sort the list in descending order
-    scores.sort(reverse=True)
+    scores.sort(reverse=True) # Study this part
 
 # Keep the top 5 scores only
     return scores[:5]
